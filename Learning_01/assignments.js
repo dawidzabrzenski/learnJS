@@ -31,6 +31,30 @@ console.log(population);
 console.log(population > 6000000);
 console.log(population > 33000000);
 
+/*
 const description =
-  "Portugal is in Europe, and its 11 million people speak portuguese";
+  country +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  " people speak " +
+  language;
 console.log(description);
+*/
+
+// Lecture: Strings and Template Literals
+
+const description = `${country} is in ${continent}, and its ${population} people speak ${language}`;
+console.log(description);
+
+// Lecture: Taking Decisions: if / else Statements
+
+if (population > 33000000) {
+  console.log(`${country}'s population is above average`);
+} else {
+  const averagePopulation = 33000000;
+  console.log(
+    `${country}'s population is ${averagePopulation - population} below average`
+  );
+}
