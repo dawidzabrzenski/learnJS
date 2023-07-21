@@ -225,26 +225,123 @@ console.log(century);
 
 // 22 Lecture: Equality Operators: == vs. ===
 
-const age = "18";
+// const age = "18";
 
-if (age === 18) console.log("You just became an adult (strict)");
+// if (age === 18) console.log("You just became an adult (strict)");
 
-if (age == 18) console.log("You just became an adult (loose)");
+// if (age == 18) console.log("You just became an adult (loose)");
 
-const favourite = Number(prompt("What's your favourite number?"));
-console.log(favourite);
-console.log(typeof favourite);
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
 
-if (favourite === 23) {
-  console.log("23 is amazing number");
-} else if (favourite === 7) {
-  console.log("7 is also a cool number");
-} else if (favourite === 9) {
-  console.log("9 is also a cool number");
+// if (favourite === 23) {
+//   console.log("23 is amazing number");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool number");
+// } else if (favourite === 9) {
+//   console.log("9 is also a cool number");
+// } else {
+//   console.log("Number is not 23 or 7 or 9");
+// }
+
+// if (favourite !== 23) {
+//   console.log("Why not 23?");
+// }
+
+// 23 and 24 Lecture: Boolean logic and Logical operators
+
+// const hasDrivingLicense = true; // A
+// const hasGoodVision = true; // B
+
+// && - AND
+// || - OR
+
+/* console.log(hasDrivingLicense && hasGoodVision);
+console.log(hasDrivingLicense || hasGoodVision);
+console.log(!hasDrivingLicense);
+
+const shouldDrive = hasDrivingLicense && hasGoodVision; */
+
+// if (hasDrivingLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Someone else should drive");
+// }
+
+// const isTired = true;
+// console.log(hasDrivingLicense && hasGoodVision && isTired);
+
+// if (hasDrivingLicense && hasGoodVision && !isTired) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Someone else should drive");
+// }
+
+// 26 Lecture: The switch Statement
+/*
+
+const day = "friday";
+
+switch (day) {
+  case "monday": // day === 'monday'
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend!");
+    break;
+  default:
+    console.log("Not a valid day!");
+}
+
+
+
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend!");
 } else {
-  console.log("Number is not 23 or 7 or 9");
+  console.log("Not a valid day!");
 }
 
-if (favourite !== 23) {
-  console.log("Why not 23?");
+*/
+
+// 28 Lecture: The Conditional (Ternary) Operator
+
+const age = 23;
+age >= 18
+  ? console.log("I like to drink wine")
+  : console.log("I like to drink water");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine";
+} else {
+  drink2 = "water";
 }
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
