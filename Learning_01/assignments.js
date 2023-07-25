@@ -130,3 +130,18 @@ switch (language) {
 }
 
 */
+
+// Lecture: The Conditional (Ternary) Operator
+
+/*
+
+let country = `Poland`;
+let population = `20000000`;
+
+console.log(
+  `${country}'s population is ${
+    population > 33000000 ? "above" : "below"
+  } average`
+);
+
+*/
