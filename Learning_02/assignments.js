@@ -72,6 +72,8 @@ console.log(countryChina);
 
 // LECTURE: Introduction to Arrays
 
+/*
+
 const populations = [110000000, 37750000, 67750000, 11590000];
 
 if (populations.length === 4) {
@@ -98,3 +100,46 @@ console.log(percentages);
 //   const arr2 = item.push(arr);
 //   return console.log(arr);
 // });
+
+*/
+
+// LECTURE: Basic Array Operations (Methods)
+/*
+
+const neighbours = ["Germany", "Russia", "Czech Republic", "Ukraine"];
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (neighbours.includes("Germany")) {
+  console.log("It is an central European country!");
+} else {
+  console.log("Probably not a central European country :D");
+}
+
+console.log(neighbours.indexOf("Russia"));
+neighbours[1] = "Shit";
+console.log(neighbours);
+
+*/
+
+// LECTURE: Introduction to Objects
+
+const myCountry = {
+  country: "Poland",
+  capital: "Warsaw",
+  language: "Polish",
+  population: 37750000,
+  neighbours: ["Germany", "Russia", "Czech Republic", "Ukraine"],
+};
+
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries
+and a capital called ${myCountry.capital}`);
+
+myCountry.population = myCountry.population + 2000000;
+console.log(myCountry.population);
+
+myCountry["population"] = myCountry["population"] - 2000000;
+console.log(myCountry.population);
