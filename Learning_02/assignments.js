@@ -199,6 +199,8 @@ console.log(percentages2);
 
 //LECTURE: Looping Backwards and Loops in Loops
 
+/*
+
 const listOfNeighbours = [
   ["Canada", "Mexico"],
   ["Spain"],
@@ -207,8 +209,47 @@ const listOfNeighbours = [
 
 for (let i = 0; i < listOfNeighbours.length; i++) {
   for (let j = 0; j < listOfNeighbours[i].length; j++) {
-    console.log(listOfNeighbours[i][j]);
+    console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
   }
 }
 
 // console.log(listOfNeighbours[0][0]);
+
+*/
+
+// LECTURE: The while Loop
+
+const populations = [10, 1441, 332, 83];
+const percentages2 = [];
+
+function percentageOfWorld1(population) {
+  let percentage = (population / 800000000) * 100;
+  return percentage;
+}
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+console.log(percentages);
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+
+console.log(percentages2);
+
+const percentages3 = [];
+let j = 0;
+
+while (j < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[j]));
+  j++;
+}
+
+console.log(percentages3);
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+console.log(bills);
