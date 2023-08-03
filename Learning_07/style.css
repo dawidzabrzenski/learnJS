@@ -169,3 +169,8 @@ main {
 .hidden {
   display: none;
 }
+
+.locked {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
